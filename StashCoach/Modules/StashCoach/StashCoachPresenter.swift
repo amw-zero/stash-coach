@@ -10,8 +10,15 @@ import Foundation
 
 class StashCoachPresenter: StashCoachModule {
     weak var view: StashCoachView!
+    var interactor: StashCoachInteractor!
     
     func showAchievements() {
-        
+        interactor.fetchAchievements()
+    }
+}
+
+extension StashCoachPresenter: StashCoachInteractorOutput {
+    func onAchievementsFetched(achievements: [Achievement]) {
+        view.showAchievements(achievements)
     }
 }

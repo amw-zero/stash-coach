@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07C2C1CF1674CEAA888241B1 /* Pods_StashCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78E0226A36BB8A2AD7A893 /* Pods_StashCoach.framework */; };
 		9EFDF736A3412D10DBC09E2E /* Pods_StashCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81826F493640595C9890723C /* Pods_StashCoachTests.framework */; };
+		A5841E6C212A03730011B3A4 /* StashCoachInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E6B212A03730011B3A4 /* StashCoachInteractor.swift */; };
 		A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5D62123900800028108 /* AppDelegate.swift */; };
 		A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DD2123900900028108 /* Assets.xcassets */; };
 		A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		6A7AA30A59C2F5D213D5B065 /* Pods-StashCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach.release.xcconfig"; sourceTree = "<group>"; };
 		81826F493640595C9890723C /* Pods_StashCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8399F5C310FDFC001673F08B /* Pods-StashCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5841E6B212A03730011B3A4 /* StashCoachInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachInteractor.swift; sourceTree = "<group>"; };
 		A5DBC5D32123900800028108 /* StashCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DBC5D62123900800028108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5DBC5DD2123900900028108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */,
 				A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */,
 				A5DBC61D21251FA900028108 /* StashCoachModule.swift */,
+				A5841E6B212A03730011B3A4 /* StashCoachInteractor.swift */,
 			);
 			path = StashCoach;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DBC613212516AC00028108 /* StashCoachViewController.swift in Sources */,
+				A5841E6C212A03730011B3A4 /* StashCoachInteractor.swift in Sources */,
 				A5DBC60D2124ED6300028108 /* StashCoachPresenter.swift in Sources */,
 				A5DBC61B21251D3300028108 /* AchievementsCollectionViewCell.swift in Sources */,
 				A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */,

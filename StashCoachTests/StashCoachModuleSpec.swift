@@ -15,6 +15,7 @@ class StashCoachModuleTests: QuickSpec {
         describe("StashCoachModule") {
             var cell: AchievementsCollectionViewCell!
             let presenter = StashCoachPresenter()
+            let interactor = StashCoachInteractor()
             let view = UIStoryboard(
                 name: "StashCoachViewController",
                 bundle: Bundle.main
@@ -23,6 +24,7 @@ class StashCoachModuleTests: QuickSpec {
             beforeEach {
                 view.loadView()
                 presenter.view = view
+                presenter.interactor = interactor
                 view.presenter = presenter
                 view.achievements = [Achievement(level: "1")]
                 

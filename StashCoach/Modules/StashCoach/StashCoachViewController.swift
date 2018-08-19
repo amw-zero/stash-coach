@@ -16,7 +16,6 @@ class StashCoachViewController: UIViewController, StashCoachView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        achievementsCollectionView.reloadData()
     }
     
     @IBOutlet weak var achievementsCollectionView: UICollectionView! {
@@ -34,6 +33,7 @@ class StashCoachViewController: UIViewController, StashCoachView {
     
     func showAchievements(_ achievements: [Achievement]) {
         self.achievements = achievements
+        achievementsCollectionView.reloadData()
     }
 }
 
