@@ -21,16 +21,18 @@ class StashCoachTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+//    func testCoachInteractor() {
+//        let presenter = StashCoachPresenter()
+//        let repository = StashCoachRepository()
+//        let interactor = StashCoachInteractor(presenter: presenter, repository: repository)
+//        interactor.findCoachLevels()
+//        XCTAssertEqual(interactor.output.levels[0].title, )
+////        let coachViewController = StashCoachViewController()
+//    }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+    // Use cases:
+    // Display Levels
+    //    - display progress
+    //    - display check if complete
+    // Increase Level
 }

@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C2C1CF1674CEAA888241B1 /* Pods_StashCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78E0226A36BB8A2AD7A893 /* Pods_StashCoach.framework */; };
+		9EFDF736A3412D10DBC09E2E /* Pods_StashCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81826F493640595C9890723C /* Pods_StashCoachTests.framework */; };
 		A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5D62123900800028108 /* AppDelegate.swift */; };
-		A5DBC5D92123900800028108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5D82123900800028108 /* ViewController.swift */; };
 		A5DBC5DC2123900800028108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DA2123900800028108 /* Main.storyboard */; };
 		A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DD2123900900028108 /* Assets.xcassets */; };
 		A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */; };
 		A5DBC5EC2123900900028108 /* StashCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5EB2123900900028108 /* StashCoachTests.swift */; };
-		A5DBC5F72123900900028108 /* StashCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5F62123900900028108 /* StashCoachUITests.swift */; };
+		A5DBC6052124E0E600028108 /* StashCoachPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC6042124E0E600028108 /* StashCoachPresenterSpec.swift */; };
+		A5DBC6072124E2C900028108 /* StashCoachModuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC6062124E2C900028108 /* StashCoachModuleSpec.swift */; };
+		A5DBC6092124E44900028108 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC6082124E44900028108 /* Podfile */; };
+		A5DBC60D2124ED6300028108 /* StashCoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC60C2124ED6300028108 /* StashCoachPresenter.swift */; };
+		A5DBC60F2125159C00028108 /* StashCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC60E2125159C00028108 /* StashCoachView.swift */; };
+		A5DBC6112125168A00028108 /* StashCoachViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC6102125168A00028108 /* StashCoachViewController.storyboard */; };
+		A5DBC613212516AC00028108 /* StashCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC612212516AC00028108 /* StashCoachViewController.swift */; };
+		A5DBC61621251BDA00028108 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61521251BDA00028108 /* Achievement.swift */; };
+		A5DBC61B21251D3300028108 /* AchievementsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */; };
+		A5DBC61C21251D3300028108 /* AchievementsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */; };
+		A5DBC61E21251FAA00028108 /* StashCoachModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61D21251FA900028108 /* StashCoachModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,19 +35,17 @@
 			remoteGlobalIDString = A5DBC5D22123900800028108;
 			remoteInfo = StashCoach;
 		};
-		A5DBC5F32123900900028108 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5DBC5CB2123900800028108 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5DBC5D22123900800028108;
-			remoteInfo = StashCoach;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DA64F75D58E5DE8C7848A15 /* Pods-StashCoachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F1E61C1F6CFAE16953C46CD /* Pods_StashCoachUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		435A16043BCA691393DF4749 /* Pods-StashCoachUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachUITests/Pods-StashCoachUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A7AA30A59C2F5D213D5B065 /* Pods-StashCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach.release.xcconfig"; sourceTree = "<group>"; };
+		81826F493640595C9890723C /* Pods_StashCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8399F5C310FDFC001673F08B /* Pods-StashCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5DBC5D32123900800028108 /* StashCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DBC5D62123900800028108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5DBC5D82123900800028108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5DBC5DB2123900800028108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5DBC5DD2123900900028108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DBC5E02123900900028108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,9 +53,20 @@
 		A5DBC5E72123900900028108 /* StashCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DBC5EB2123900900028108 /* StashCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachTests.swift; sourceTree = "<group>"; };
 		A5DBC5ED2123900900028108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5DBC5F22123900900028108 /* StashCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5DBC5F62123900900028108 /* StashCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachUITests.swift; sourceTree = "<group>"; };
-		A5DBC5F82123900900028108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DBC6042124E0E600028108 /* StashCoachPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachPresenterSpec.swift; sourceTree = "<group>"; };
+		A5DBC6062124E2C900028108 /* StashCoachModuleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachModuleSpec.swift; sourceTree = "<group>"; };
+		A5DBC6082124E44900028108 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5DBC60C2124ED6300028108 /* StashCoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachPresenter.swift; sourceTree = "<group>"; };
+		A5DBC60E2125159C00028108 /* StashCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachView.swift; sourceTree = "<group>"; };
+		A5DBC6102125168A00028108 /* StashCoachViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StashCoachViewController.storyboard; sourceTree = "<group>"; };
+		A5DBC612212516AC00028108 /* StashCoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachViewController.swift; sourceTree = "<group>"; };
+		A5DBC61521251BDA00028108 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5DBC61D21251FA900028108 /* StashCoachModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachModule.swift; sourceTree = "<group>"; };
+		D49BDA43810B0BB94AF584CD /* Pods-StashCoachUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachUITests/Pods-StashCoachUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEECF8141D86B5C8D893B683 /* Pods-StashCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach.debug.xcconfig"; sourceTree = "<group>"; };
+		FF78E0226A36BB8A2AD7A893 /* Pods_StashCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C2C1CF1674CEAA888241B1 /* Pods_StashCoach.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,26 +82,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5DBC5EF2123900900028108 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9EFDF736A3412D10DBC09E2E /* Pods_StashCoachTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D0DDCAE62A1045B9E3148B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF78E0226A36BB8A2AD7A893 /* Pods_StashCoach.framework */,
+				81826F493640595C9890723C /* Pods_StashCoachTests.framework */,
+				3F1E61C1F6CFAE16953C46CD /* Pods_StashCoachUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5DBC5CA2123900800028108 = {
 			isa = PBXGroup;
 			children = (
+				A5DBC6082124E44900028108 /* Podfile */,
 				A5DBC5D52123900800028108 /* StashCoach */,
 				A5DBC5EA2123900900028108 /* StashCoachTests */,
-				A5DBC5F52123900900028108 /* StashCoachUITests */,
 				A5DBC5D42123900800028108 /* Products */,
+				FA557C19B94763BED8D04193 /* Pods */,
+				2D0DDCAE62A1045B9E3148B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +116,6 @@
 			children = (
 				A5DBC5D32123900800028108 /* StashCoach.app */,
 				A5DBC5E72123900900028108 /* StashCoachTests.xctest */,
-				A5DBC5F22123900900028108 /* StashCoachUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +123,13 @@
 		A5DBC5D52123900800028108 /* StashCoach */ = {
 			isa = PBXGroup;
 			children = (
-				A5DBC5D62123900800028108 /* AppDelegate.swift */,
-				A5DBC5D82123900800028108 /* ViewController.swift */,
-				A5DBC5DA2123900800028108 /* Main.storyboard */,
-				A5DBC5DD2123900900028108 /* Assets.xcassets */,
-				A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */,
 				A5DBC5E22123900900028108 /* Info.plist */,
+				A5DBC5D62123900800028108 /* AppDelegate.swift */,
+				A5DBC5DD2123900900028108 /* Assets.xcassets */,
+				A5DBC61421251BB500028108 /* Entities */,
+				A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */,
+				A5DBC5DA2123900800028108 /* Main.storyboard */,
+				A5DBC60A2124ED4800028108 /* Modules */,
 			);
 			path = StashCoach;
 			sourceTree = "<group>";
@@ -110,19 +137,55 @@
 		A5DBC5EA2123900900028108 /* StashCoachTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5DBC5EB2123900900028108 /* StashCoachTests.swift */,
 				A5DBC5ED2123900900028108 /* Info.plist */,
+				A5DBC6062124E2C900028108 /* StashCoachModuleSpec.swift */,
+				A5DBC6042124E0E600028108 /* StashCoachPresenterSpec.swift */,
+				A5DBC5EB2123900900028108 /* StashCoachTests.swift */,
 			);
 			path = StashCoachTests;
 			sourceTree = "<group>";
 		};
-		A5DBC5F52123900900028108 /* StashCoachUITests */ = {
+		A5DBC60A2124ED4800028108 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A5DBC5F62123900900028108 /* StashCoachUITests.swift */,
-				A5DBC5F82123900900028108 /* Info.plist */,
+				A5DBC60B2124ED5100028108 /* StashCoach */,
 			);
-			path = StashCoachUITests;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A5DBC60B2124ED5100028108 /* StashCoach */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC60C2124ED6300028108 /* StashCoachPresenter.swift */,
+				A5DBC60E2125159C00028108 /* StashCoachView.swift */,
+				A5DBC6102125168A00028108 /* StashCoachViewController.storyboard */,
+				A5DBC612212516AC00028108 /* StashCoachViewController.swift */,
+				A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */,
+				A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */,
+				A5DBC61D21251FA900028108 /* StashCoachModule.swift */,
+			);
+			path = StashCoach;
+			sourceTree = "<group>";
+		};
+		A5DBC61421251BB500028108 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC61521251BDA00028108 /* Achievement.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FA557C19B94763BED8D04193 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEECF8141D86B5C8D893B683 /* Pods-StashCoach.debug.xcconfig */,
+				6A7AA30A59C2F5D213D5B065 /* Pods-StashCoach.release.xcconfig */,
+				2DA64F75D58E5DE8C7848A15 /* Pods-StashCoachTests.debug.xcconfig */,
+				8399F5C310FDFC001673F08B /* Pods-StashCoachTests.release.xcconfig */,
+				D49BDA43810B0BB94AF584CD /* Pods-StashCoachUITests.debug.xcconfig */,
+				435A16043BCA691393DF4749 /* Pods-StashCoachUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5DBC5FB2123900900028108 /* Build configuration list for PBXNativeTarget "StashCoach" */;
 			buildPhases = (
+				3A07796A3F73DF7414B8678B /* [CP] Check Pods Manifest.lock */,
 				A5DBC5CF2123900800028108 /* Sources */,
 				A5DBC5D02123900800028108 /* Frameworks */,
 				A5DBC5D12123900800028108 /* Resources */,
@@ -149,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5DBC5FE2123900900028108 /* Build configuration list for PBXNativeTarget "StashCoachTests" */;
 			buildPhases = (
+				C4352171A264E877B7AF73AF /* [CP] Check Pods Manifest.lock */,
 				A5DBC5E32123900900028108 /* Sources */,
 				A5DBC5E42123900900028108 /* Frameworks */,
 				A5DBC5E52123900900028108 /* Resources */,
+				5D61E2E11C022A5702A3ED2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,24 +228,6 @@
 			productName = StashCoachTests;
 			productReference = A5DBC5E72123900900028108 /* StashCoachTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A5DBC5F12123900900028108 /* StashCoachUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5DBC6012123900900028108 /* Build configuration list for PBXNativeTarget "StashCoachUITests" */;
-			buildPhases = (
-				A5DBC5EE2123900900028108 /* Sources */,
-				A5DBC5EF2123900900028108 /* Frameworks */,
-				A5DBC5F02123900900028108 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5DBC5F42123900900028108 /* PBXTargetDependency */,
-			);
-			name = StashCoachUITests;
-			productName = StashCoachUITests;
-			productReference = A5DBC5F22123900900028108 /* StashCoachUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,10 +243,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					A5DBC5E62123900900028108 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = A5DBC5D22123900800028108;
-					};
-					A5DBC5F12123900900028108 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = A5DBC5D22123900800028108;
 					};
@@ -219,7 +263,6 @@
 			targets = (
 				A5DBC5D22123900800028108 /* StashCoach */,
 				A5DBC5E62123900900028108 /* StashCoachTests */,
-				A5DBC5F12123900900028108 /* StashCoachUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,8 +272,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DBC6112125168A00028108 /* StashCoachViewController.storyboard in Resources */,
 				A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */,
 				A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */,
+				A5DBC61C21251D3300028108 /* AchievementsCollectionViewCell.xib in Resources */,
 				A5DBC5DC2123900800028108 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,25 +284,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5DBC5F02123900900028108 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A5DBC6092124E44900028108 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A07796A3F73DF7414B8678B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashCoach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D61E2E11C022A5702A3ED2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4352171A264E877B7AF73AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashCoachTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5DBC5CF2123900800028108 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DBC5D92123900800028108 /* ViewController.swift in Sources */,
+				A5DBC613212516AC00028108 /* StashCoachViewController.swift in Sources */,
+				A5DBC60D2124ED6300028108 /* StashCoachPresenter.swift in Sources */,
+				A5DBC61B21251D3300028108 /* AchievementsCollectionViewCell.swift in Sources */,
 				A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */,
+				A5DBC61E21251FAA00028108 /* StashCoachModule.swift in Sources */,
+				A5DBC60F2125159C00028108 /* StashCoachView.swift in Sources */,
+				A5DBC61621251BDA00028108 /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,15 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DBC6072124E2C900028108 /* StashCoachModuleSpec.swift in Sources */,
 				A5DBC5EC2123900900028108 /* StashCoachTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5DBC5EE2123900900028108 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5DBC5F72123900900028108 /* StashCoachUITests.swift in Sources */,
+				A5DBC6052124E0E600028108 /* StashCoachPresenterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +381,6 @@
 			isa = PBXTargetDependency;
 			target = A5DBC5D22123900800028108 /* StashCoach */;
 			targetProxy = A5DBC5E82123900900028108 /* PBXContainerItemProxy */;
-		};
-		A5DBC5F42123900900028108 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A5DBC5D22123900800028108 /* StashCoach */;
-			targetProxy = A5DBC5F32123900900028108 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +520,7 @@
 		};
 		A5DBC5FC2123900900028108 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEECF8141D86B5C8D893B683 /* Pods-StashCoach.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +538,7 @@
 		};
 		A5DBC5FD2123900900028108 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7AA30A59C2F5D213D5B065 /* Pods-StashCoach.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +556,7 @@
 		};
 		A5DBC5FF2123900900028108 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA64F75D58E5DE8C7848A15 /* Pods-StashCoachTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +577,7 @@
 		};
 		A5DBC6002123900900028108 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8399F5C310FDFC001673F08B /* Pods-StashCoachTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,44 +593,6 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCoach.app/StashCoach";
-			};
-			name = Release;
-		};
-		A5DBC6022123900900028108 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StashCoachUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amwzero.StashCoachUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StashCoach;
-			};
-			name = Debug;
-		};
-		A5DBC6032123900900028108 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StashCoachUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amwzero.StashCoachUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StashCoach;
 			};
 			name = Release;
 		};
@@ -564,15 +622,6 @@
 			buildConfigurations = (
 				A5DBC5FF2123900900028108 /* Debug */,
 				A5DBC6002123900900028108 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A5DBC6012123900900028108 /* Build configuration list for PBXNativeTarget "StashCoachUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5DBC6022123900900028108 /* Debug */,
-				A5DBC6032123900900028108 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
