@@ -10,7 +10,6 @@
 		07C2C1CF1674CEAA888241B1 /* Pods_StashCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78E0226A36BB8A2AD7A893 /* Pods_StashCoach.framework */; };
 		9EFDF736A3412D10DBC09E2E /* Pods_StashCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81826F493640595C9890723C /* Pods_StashCoachTests.framework */; };
 		A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5D62123900800028108 /* AppDelegate.swift */; };
-		A5DBC5DC2123900800028108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DA2123900800028108 /* Main.storyboard */; };
 		A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DD2123900900028108 /* Assets.xcassets */; };
 		A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */; };
 		A5DBC5EC2123900900028108 /* StashCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5EB2123900900028108 /* StashCoachTests.swift */; };
@@ -46,7 +45,6 @@
 		8399F5C310FDFC001673F08B /* Pods-StashCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5DBC5D32123900800028108 /* StashCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DBC5D62123900800028108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5DBC5DB2123900800028108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5DBC5DD2123900900028108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DBC5E02123900900028108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5DBC5E22123900900028108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				A5DBC5DD2123900900028108 /* Assets.xcassets */,
 				A5DBC61421251BB500028108 /* Entities */,
 				A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */,
-				A5DBC5DA2123900800028108 /* Main.storyboard */,
 				A5DBC60A2124ED4800028108 /* Modules */,
 			);
 			path = StashCoach;
@@ -276,7 +273,6 @@
 				A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */,
 				A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */,
 				A5DBC61C21251D3300028108 /* AchievementsCollectionViewCell.xib in Resources */,
-				A5DBC5DC2123900800028108 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5DBC5DA2123900800028108 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5DBC5DB2123900800028108 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
