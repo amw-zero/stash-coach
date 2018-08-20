@@ -57,18 +57,34 @@
                                 </constraints>
                                 <color key="progressTintColor" red="0.18432898819999999" green="0.82745099070000006" blue="0.48627451059999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xS-m6-Lgp" userLabel="Progress Points Label">
+                                <rect key="frame" x="8" y="188.5" width="34.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikg-iH-tZh" userLabel="Total Points Label">
+                                <rect key="frame" x="200" y="188.5" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="gE9-JX-vyB" firstAttribute="leading" secondItem="1Oj-z7-UG9" secondAttribute="leading" id="38a-SV-Ett"/>
                             <constraint firstAttribute="bottom" secondItem="gE9-JX-vyB" secondAttribute="bottom" id="9X3-Bz-9fg"/>
                             <constraint firstItem="oGp-3d-Y1R" firstAttribute="centerX" secondItem="1Oj-z7-UG9" secondAttribute="centerX" id="BVh-8P-vls"/>
+                            <constraint firstAttribute="bottom" secondItem="0xS-m6-Lgp" secondAttribute="bottom" constant="10" id="DjW-Wc-g6P"/>
                             <constraint firstItem="Wux-Su-nCV" firstAttribute="centerY" secondItem="1Oj-z7-UG9" secondAttribute="centerY" constant="-30" id="Gni-gH-Weh"/>
                             <constraint firstItem="gE9-JX-vyB" firstAttribute="top" secondItem="1Oj-z7-UG9" secondAttribute="top" id="JFl-4A-yeH"/>
                             <constraint firstAttribute="bottom" secondItem="oGp-3d-Y1R" secondAttribute="bottom" constant="30.5" id="LFa-PQ-pap"/>
                             <constraint firstAttribute="trailing" secondItem="oGp-3d-Y1R" secondAttribute="trailing" constant="15" id="c2s-aS-Abl"/>
                             <constraint firstAttribute="trailing" secondItem="gE9-JX-vyB" secondAttribute="trailing" id="fWu-MU-1Gq"/>
                             <constraint firstItem="Wux-Su-nCV" firstAttribute="centerX" secondItem="1Oj-z7-UG9" secondAttribute="centerX" id="lVp-B6-PBJ"/>
+                            <constraint firstItem="0xS-m6-Lgp" firstAttribute="leading" secondItem="1Oj-z7-UG9" secondAttribute="leading" constant="8" id="ote-on-8kx"/>
+                            <constraint firstAttribute="trailing" secondItem="Ikg-iH-tZh" secondAttribute="trailing" constant="8" id="v5A-Av-Xi1"/>
                             <constraint firstItem="oGp-3d-Y1R" firstAttribute="leading" secondItem="1Oj-z7-UG9" secondAttribute="leading" constant="15" id="wSF-hI-FYi"/>
+                            <constraint firstAttribute="bottom" secondItem="Ikg-iH-tZh" secondAttribute="bottom" constant="10" id="wcp-9n-8eN"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -84,7 +100,9 @@
                 <outlet property="circleView" destination="Wux-Su-nCV" id="HGM-FT-Alz"/>
                 <outlet property="contentContainerView" destination="1Oj-z7-UG9" id="bzX-JJ-WTz"/>
                 <outlet property="levelLabel" destination="F3G-6e-Lje" id="jn7-la-xS2"/>
+                <outlet property="progressPointsLabel" destination="0xS-m6-Lgp" id="6Od-9b-AoU"/>
                 <outlet property="progressView" destination="oGp-3d-Y1R" id="ZIJ-jX-zT3"/>
+                <outlet property="totalPointsLabel" destination="Ikg-iH-tZh" id="p7W-tH-lqZ"/>
             </connections>
             <point key="canvasLocation" x="-50" y="-480"/>
         </tableViewCell>

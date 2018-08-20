@@ -11,8 +11,8 @@ import Foundation
 struct Achievement: Codable {
     let level: String
     let bgImageUrl: String
-    let progress: Float32
-    let total: Float32
+    let progress: Int
+    let total: Int
     let accessible: Bool
     
     enum CodingKeys: String, CodingKey {
