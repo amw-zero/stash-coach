@@ -16,6 +16,7 @@ class StashCoachViewController: UIViewController, StashCoachView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.showAchievements()
     }
     
     @IBOutlet weak var achievementsCollectionView: UICollectionView! {
