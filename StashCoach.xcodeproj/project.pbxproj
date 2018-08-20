@@ -10,6 +10,7 @@
 		07C2C1CF1674CEAA888241B1 /* Pods_StashCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78E0226A36BB8A2AD7A893 /* Pods_StashCoach.framework */; };
 		9EFDF736A3412D10DBC09E2E /* Pods_StashCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81826F493640595C9890723C /* Pods_StashCoachTests.framework */; };
 		A5841E6C212A03730011B3A4 /* StashCoachInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E6B212A03730011B3A4 /* StashCoachInteractor.swift */; };
+		A5841E71212A1DE80011B3A4 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = A5841E70212A1DE80011B3A4 /* achievements.json */; };
 		A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5D62123900800028108 /* AppDelegate.swift */; };
 		A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DD2123900900028108 /* Assets.xcassets */; };
 		A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 		81826F493640595C9890723C /* Pods_StashCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8399F5C310FDFC001673F08B /* Pods-StashCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5841E6B212A03730011B3A4 /* StashCoachInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachInteractor.swift; sourceTree = "<group>"; };
+		A5841E70212A1DE80011B3A4 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = achievements.json; path = StashCoach/StubResponses/achievements.json; sourceTree = SOURCE_ROOT; };
 		A5DBC5D32123900800028108 /* StashCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DBC5D62123900800028108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5DBC5DD2123900900028108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,15 +101,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A5841E6F212A1DB10011B3A4 /* StubResponses */ = {
+			isa = PBXGroup;
+			children = (
+				A5841E70212A1DE80011B3A4 /* achievements.json */,
+			);
+			name = StubResponses;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A5DBC5CA2123900800028108 = {
 			isa = PBXGroup;
 			children = (
 				A5DBC6082124E44900028108 /* Podfile */,
+				2D0DDCAE62A1045B9E3148B0 /* Frameworks */,
+				FA557C19B94763BED8D04193 /* Pods */,
+				A5DBC5D42123900800028108 /* Products */,
 				A5DBC5D52123900800028108 /* StashCoach */,
 				A5DBC5EA2123900900028108 /* StashCoachTests */,
-				A5DBC5D42123900800028108 /* Products */,
-				FA557C19B94763BED8D04193 /* Pods */,
-				2D0DDCAE62A1045B9E3148B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +140,7 @@
 				A5DBC61421251BB500028108 /* Entities */,
 				A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */,
 				A5DBC60A2124ED4800028108 /* Modules */,
+				A5841E6F212A1DB10011B3A4 /* StubResponses */,
 			);
 			path = StashCoach;
 			sourceTree = "<group>";
@@ -273,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DBC6112125168A00028108 /* StashCoachViewController.storyboard in Resources */,
+				A5841E71212A1DE80011B3A4 /* achievements.json in Resources */,
 				A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */,
 				A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */,
 				A5DBC61C21251D3300028108 /* AchievementsCollectionViewCell.xib in Resources */,

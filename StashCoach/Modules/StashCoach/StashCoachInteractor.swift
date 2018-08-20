@@ -12,11 +12,17 @@ protocol StashCoachInteractorOutput: class {
     func onAchievementsFetched(achievements: [Achievement])
 }
 
+struct AchievementsResponse: Codable {
+    let achievements: [Achievement]
+}
+
 class StashCoachInteractor {
     weak var output: StashCoachInteractorOutput!
 
     func fetchAchievements() {
-        let achievements = [Achievement(level: "1")]
-        output?.onAchievementsFetched(achievements: achievements)
+        let fileUrl = Bundle.main.url(forResource: "achievements", withExtension: "json")!
+        let achievementsJson = try! Data(contentsOf: fileUrl)
+        let response = try! JSONDecoder().decode(AchievementsResponse.self, from: achievementsJson)
+        output.onAchievementsFetched(achievements: response.achievements)
     }
 }

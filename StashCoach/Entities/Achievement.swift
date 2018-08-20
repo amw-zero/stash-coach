@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Achievement {
+struct Achievement: Codable {
     let level: String
 }

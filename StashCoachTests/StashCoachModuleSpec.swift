@@ -23,11 +23,10 @@ class StashCoachModuleTests: QuickSpec {
             
             beforeEach {
                 view.loadView()
+                interactor.output = presenter
                 presenter.view = view
                 presenter.interactor = interactor
                 view.presenter = presenter
-                view.achievements = [Achievement(level: "1")]
-                
                 presenter.showAchievements()
                 
                 let indexPath = IndexPath(row: 0, section: 0)
