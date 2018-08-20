@@ -58,3 +58,9 @@ extension StashCoachViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension StashCoachViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 240
+    }
+}

@@ -11,29 +11,53 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="125" id="1aM-J8-K8T" customClass="AchievementsTableViewCell" customModule="StashCoach" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="293" height="125"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="240" id="1aM-J8-K8T" customClass="AchievementsTableViewCell" customModule="StashCoach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="240"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1aM-J8-K8T" id="32n-yV-5g0">
-                <rect key="frame" x="0.0" y="0.0" width="293" height="124.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="293" height="239.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr6-vM-W1D">
-                        <rect key="frame" x="125.5" y="52" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-z7-UG9" userLabel="Content Container">
+                        <rect key="frame" x="20" y="10" width="253" height="219.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr6-vM-W1D">
+                                <rect key="frame" x="105.5" y="99.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-Su-nCV" userLabel="Circle View">
+                                <rect key="frame" x="76" y="30" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Biv-i8-5EQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="FIR-xw-hYj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058874" green="0.85882353779999998" blue="0.62352943419999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wux-Su-nCV" firstAttribute="centerY" secondItem="1Oj-z7-UG9" secondAttribute="centerY" constant="-30" id="Gni-gH-Weh"/>
+                            <constraint firstItem="Wux-Su-nCV" firstAttribute="centerX" secondItem="1Oj-z7-UG9" secondAttribute="centerX" id="lVp-B6-PBJ"/>
+                            <constraint firstItem="zr6-vM-W1D" firstAttribute="centerY" secondItem="1Oj-z7-UG9" secondAttribute="centerY" id="sBt-9v-9Du"/>
+                            <constraint firstItem="zr6-vM-W1D" firstAttribute="centerX" secondItem="1Oj-z7-UG9" secondAttribute="centerX" id="uUn-jF-kBm"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="zr6-vM-W1D" firstAttribute="centerY" secondItem="32n-yV-5g0" secondAttribute="centerY" id="1bi-uf-CgQ"/>
-                    <constraint firstItem="zr6-vM-W1D" firstAttribute="centerX" secondItem="32n-yV-5g0" secondAttribute="centerX" id="ku5-t1-KvL"/>
+                    <constraint firstAttribute="trailing" secondItem="1Oj-z7-UG9" secondAttribute="trailing" constant="20" id="31t-A5-OU3"/>
+                    <constraint firstItem="1Oj-z7-UG9" firstAttribute="top" secondItem="32n-yV-5g0" secondAttribute="top" constant="10" id="47G-FP-eId"/>
+                    <constraint firstItem="1Oj-z7-UG9" firstAttribute="leading" secondItem="32n-yV-5g0" secondAttribute="leading" constant="20" id="gWf-qy-3vx"/>
+                    <constraint firstAttribute="bottom" secondItem="1Oj-z7-UG9" secondAttribute="bottom" constant="10" id="o2R-K6-8Qb"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="circleView" destination="Wux-Su-nCV" id="NiO-De-vy1"/>
+                <outlet property="contentContainerView" destination="1Oj-z7-UG9" id="bzX-JJ-WTz"/>
                 <outlet property="levelLabel" destination="zr6-vM-W1D" id="kfm-1q-6Qi"/>
             </connections>
-            <point key="canvasLocation" x="19.5" y="-468.5"/>
+            <point key="canvasLocation" x="-50" y="-480"/>
         </tableViewCell>
     </objects>
 </document>

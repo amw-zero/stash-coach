@@ -10,6 +10,16 @@ import UIKit
 
 class AchievementsTableViewCell: UITableViewCell {
     @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var contentContainerView: UIView! {
+        didSet {
+            contentContainerView.layer.cornerRadius = 10.0
+        }
+    }
+    @IBOutlet weak var circleView: UIView! {
+        didSet {
+            circleView.layer.cornerRadius = 50.0
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
