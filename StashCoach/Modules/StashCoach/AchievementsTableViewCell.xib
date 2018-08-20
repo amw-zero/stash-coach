@@ -18,10 +18,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="293" height="239.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-z7-UG9" userLabel="Content Container">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-z7-UG9" userLabel="Content Container">
                         <rect key="frame" x="20" y="10" width="253" height="219.5"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-Su-nCV" userLabel="Circle View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gE9-JX-vyB" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="253" height="219.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-Su-nCV" userLabel="Circle View">
                                 <rect key="frame" x="76" y="30" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Y3-C9-dxa" userLabel="Level Title">
@@ -48,9 +51,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.1647058874" green="0.85882353779999998" blue="0.62352943419999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gE9-JX-vyB" firstAttribute="leading" secondItem="1Oj-z7-UG9" secondAttribute="leading" id="38a-SV-Ett"/>
+                            <constraint firstAttribute="bottom" secondItem="gE9-JX-vyB" secondAttribute="bottom" id="9X3-Bz-9fg"/>
                             <constraint firstItem="Wux-Su-nCV" firstAttribute="centerY" secondItem="1Oj-z7-UG9" secondAttribute="centerY" constant="-30" id="Gni-gH-Weh"/>
+                            <constraint firstItem="gE9-JX-vyB" firstAttribute="top" secondItem="1Oj-z7-UG9" secondAttribute="top" id="JFl-4A-yeH"/>
+                            <constraint firstAttribute="trailing" secondItem="gE9-JX-vyB" secondAttribute="trailing" id="fWu-MU-1Gq"/>
                             <constraint firstItem="Wux-Su-nCV" firstAttribute="centerX" secondItem="1Oj-z7-UG9" secondAttribute="centerX" id="lVp-B6-PBJ"/>
                         </constraints>
                     </view>
@@ -63,6 +69,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="backgroundImageView" destination="gE9-JX-vyB" id="IRZ-pz-ePb"/>
                 <outlet property="circleView" destination="Wux-Su-nCV" id="HGM-FT-Alz"/>
                 <outlet property="contentContainerView" destination="1Oj-z7-UG9" id="bzX-JJ-WTz"/>
                 <outlet property="levelLabel" destination="F3G-6e-Lje" id="jn7-la-xS2"/>

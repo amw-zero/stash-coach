@@ -10,4 +10,10 @@ import Foundation
 
 struct Achievement: Codable {
     let level: String
+    let bgImageUrl: String
+    
+    enum CodingKeys: String, CodingKey {
+        case level
+        case bgImageUrl = "bg_image_url"
+    }
 }

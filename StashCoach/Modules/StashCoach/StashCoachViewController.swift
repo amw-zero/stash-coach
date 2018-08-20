@@ -53,7 +53,7 @@ extension StashCoachViewController: UITableViewDataSource {
             ) as! AchievementsTableViewCell
         
         let achievement = achievements[indexPath.row]
-        cell.levelLabel.text = achievement.level
+        cell.configure(with: achievement)
         
         return cell
     }

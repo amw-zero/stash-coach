@@ -214,6 +214,7 @@
 				A5DBC5CF2123900800028108 /* Sources */,
 				A5DBC5D02123900800028108 /* Frameworks */,
 				A5DBC5D12123900800028108 /* Resources */,
+				A72823EEC942368E72E1595C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +343,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72823EEC942368E72E1595C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4352171A264E877B7AF73AF /* [CP] Check Pods Manifest.lock */ = {

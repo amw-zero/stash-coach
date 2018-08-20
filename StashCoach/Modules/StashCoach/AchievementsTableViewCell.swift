@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AchievementsTableViewCell: UITableViewCell {
     @IBOutlet weak var levelLabel: UILabel!
@@ -21,9 +22,10 @@ class AchievementsTableViewCell: UITableViewCell {
         }
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
+    func configure(with achievement: Achievement) {
+        levelLabel.text = achievement.level        
+        backgroundImageView.kf.setImage(with: URL(string: achievement.bgImageUrl))
     }
-
 }
