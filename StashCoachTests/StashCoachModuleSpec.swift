@@ -13,7 +13,7 @@ import Nimble
 class StashCoachModuleTests: QuickSpec {
     override func spec() {
         describe("StashCoachModule") {
-            var cell: AchievementsCollectionViewCell!
+            var cell: AchievementsTableViewCell!
             let presenter = StashCoachPresenter()
             let interactor = StashCoachInteractor()
             let view = UIStoryboard(
@@ -30,10 +30,10 @@ class StashCoachModuleTests: QuickSpec {
                 presenter.showAchievements()
                 
                 let indexPath = IndexPath(row: 0, section: 0)
-                cell = view.collectionView(
-                    view.achievementsCollectionView,
-                    cellForItemAt: indexPath
-                ) as! AchievementsCollectionViewCell
+                cell = view.tableView(
+                    view.achievementsTableView,
+                    cellForRowAt: indexPath
+                ) as! AchievementsTableViewCell
             }
             
             it("displays achievement information") {

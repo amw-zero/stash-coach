@@ -9,7 +9,7 @@
 import UIKit
 
 class StashCoachViewController: UIViewController, StashCoachView {
-    static let achievementsCellReuseIdentifier = "AchievementsCollectionViewCell"
+    static let achievementsCellReuseIdentifier = "AchievementsTableViewCell"
     var achievements: [Achievement] = []
     
     var presenter: StashCoachModule!
@@ -19,41 +19,42 @@ class StashCoachViewController: UIViewController, StashCoachView {
         presenter.showAchievements()
     }
     
-    @IBOutlet weak var achievementsCollectionView: UICollectionView! {
+    @IBOutlet weak var achievementsTableView: UITableView! {
         didSet {
             let nib = UINib(
-                nibName: "AchievementsCollectionViewCell",
+                nibName: "AchievementsTableViewCell",
                 bundle: nil
             )
-            achievementsCollectionView.register(
+           
+            achievementsTableView.register(
                 nib,
-                forCellWithReuseIdentifier: type(of: self).achievementsCellReuseIdentifier
+                forCellReuseIdentifier: type(of: self).achievementsCellReuseIdentifier
             )
         }
     }
     
     func showAchievements(_ achievements: [Achievement]) {
         self.achievements = achievements
-        achievementsCollectionView.reloadData()
+        achievementsTableView.reloadData()
     }
 }
 
-// MARK - UICollectionViewDataSource
+// MARK - UITableViewDataSource
 
-extension StashCoachViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+extension StashCoachViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return achievements.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: StashCoachViewController.achievementsCellReuseIdentifier,
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: StashCoachViewController.achievementsCellReuseIdentifier,
             for: indexPath
-        ) as! AchievementsCollectionViewCell
-
+            ) as! AchievementsTableViewCell
+        
         let achievement = achievements[indexPath.row]
         cell.levelLabel.text = achievement.level
-
+        
         return cell
     }
 }

@@ -18,33 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BjK-v6-hIe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCr-fg-6vG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BpX-JB-eSd">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BfE-rm-w3x" id="hhI-Qq-Wuh"/>
-                                    <outlet property="delegate" destination="BfE-rm-w3x" id="sje-Du-jib"/>
+                                    <outlet property="dataSource" destination="BfE-rm-w3x" id="cOs-Y4-2ZT"/>
+                                    <outlet property="delegate" destination="BfE-rm-w3x" id="Q1D-Wf-9to"/>
                                 </connections>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nyA-52-wHd" firstAttribute="trailing" secondItem="BjK-v6-hIe" secondAttribute="trailing" id="Ye4-Yj-a5X"/>
-                            <constraint firstItem="BjK-v6-hIe" firstAttribute="leading" secondItem="nyA-52-wHd" secondAttribute="leading" id="dod-x0-fIj"/>
-                            <constraint firstItem="BjK-v6-hIe" firstAttribute="top" secondItem="nyA-52-wHd" secondAttribute="top" id="fes-yk-uBt"/>
-                            <constraint firstItem="nyA-52-wHd" firstAttribute="bottom" secondItem="BjK-v6-hIe" secondAttribute="bottom" id="p6o-RX-aiD"/>
+                            <constraint firstItem="uCr-fg-6vG" firstAttribute="top" secondItem="nyA-52-wHd" secondAttribute="top" id="JYK-At-5Xe"/>
+                            <constraint firstItem="uCr-fg-6vG" firstAttribute="trailing" secondItem="nyA-52-wHd" secondAttribute="trailing" id="Ka1-ld-LV7"/>
+                            <constraint firstItem="nyA-52-wHd" firstAttribute="bottom" secondItem="uCr-fg-6vG" secondAttribute="bottom" id="ggl-3J-w30"/>
+                            <constraint firstItem="uCr-fg-6vG" firstAttribute="leading" secondItem="nyA-52-wHd" secondAttribute="leading" id="tgt-4L-4kK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nyA-52-wHd"/>
                     </view>
                     <connections>
-                        <outlet property="achievementsCollectionView" destination="BjK-v6-hIe" id="i5E-dy-rno"/>
+                        <outlet property="achievementsTableView" destination="uCr-fg-6vG" id="OKY-EA-X8t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuG-Jn-46g" userLabel="First Responder" sceneMemberID="firstResponder"/>

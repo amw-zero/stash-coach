@@ -24,8 +24,8 @@
 		A5DBC6112125168A00028108 /* StashCoachViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC6102125168A00028108 /* StashCoachViewController.storyboard */; };
 		A5DBC613212516AC00028108 /* StashCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC612212516AC00028108 /* StashCoachViewController.swift */; };
 		A5DBC61621251BDA00028108 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61521251BDA00028108 /* Achievement.swift */; };
-		A5DBC61B21251D3300028108 /* AchievementsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */; };
-		A5DBC61C21251D3300028108 /* AchievementsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */; };
+		A5DBC61B21251D3300028108 /* AchievementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61921251D3300028108 /* AchievementsTableViewCell.swift */; };
+		A5DBC61C21251D3300028108 /* AchievementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC61A21251D3300028108 /* AchievementsTableViewCell.xib */; };
 		A5DBC61E21251FAA00028108 /* StashCoachModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC61D21251FA900028108 /* StashCoachModule.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 		A5DBC6102125168A00028108 /* StashCoachViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StashCoachViewController.storyboard; sourceTree = "<group>"; };
 		A5DBC612212516AC00028108 /* StashCoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachViewController.swift; sourceTree = "<group>"; };
 		A5DBC61521251BDA00028108 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
-		A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCollectionViewCell.swift; sourceTree = "<group>"; };
-		A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5DBC61921251D3300028108 /* AchievementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsTableViewCell.swift; sourceTree = "<group>"; };
+		A5DBC61A21251D3300028108 /* AchievementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsTableViewCell.xib; sourceTree = "<group>"; };
 		A5DBC61D21251FA900028108 /* StashCoachModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachModule.swift; sourceTree = "<group>"; };
 		D49BDA43810B0BB94AF584CD /* Pods-StashCoachUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachUITests/Pods-StashCoachUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FEECF8141D86B5C8D893B683 /* Pods-StashCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,8 +173,8 @@
 				A5DBC60E2125159C00028108 /* StashCoachView.swift */,
 				A5DBC6102125168A00028108 /* StashCoachViewController.storyboard */,
 				A5DBC612212516AC00028108 /* StashCoachViewController.swift */,
-				A5DBC61921251D3300028108 /* AchievementsCollectionViewCell.swift */,
-				A5DBC61A21251D3300028108 /* AchievementsCollectionViewCell.xib */,
+				A5DBC61921251D3300028108 /* AchievementsTableViewCell.swift */,
+				A5DBC61A21251D3300028108 /* AchievementsTableViewCell.xib */,
 				A5DBC61D21251FA900028108 /* StashCoachModule.swift */,
 				A5841E6B212A03730011B3A4 /* StashCoachInteractor.swift */,
 				A5841E77212A51370011B3A4 /* StashCoachRouter.swift */,
@@ -291,7 +291,7 @@
 				A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */,
 				A5841E7D212A56660011B3A4 /* achievements.json in Resources */,
 				A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */,
-				A5DBC61C21251D3300028108 /* AchievementsCollectionViewCell.xib in Resources */,
+				A5DBC61C21251D3300028108 /* AchievementsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +372,7 @@
 				A5DBC613212516AC00028108 /* StashCoachViewController.swift in Sources */,
 				A5841E6C212A03730011B3A4 /* StashCoachInteractor.swift in Sources */,
 				A5DBC60D2124ED6300028108 /* StashCoachPresenter.swift in Sources */,
-				A5DBC61B21251D3300028108 /* AchievementsCollectionViewCell.swift in Sources */,
+				A5DBC61B21251D3300028108 /* AchievementsTableViewCell.swift in Sources */,
 				A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */,
 				A5841E78212A51370011B3A4 /* StashCoachRouter.swift in Sources */,
 				A5DBC61E21251FAA00028108 /* StashCoachModule.swift in Sources */,

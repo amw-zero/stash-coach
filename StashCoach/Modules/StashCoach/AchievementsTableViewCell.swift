@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AchievementsCollectionViewCell: UICollectionViewCell {
+class AchievementsTableViewCell: UITableViewCell {
     @IBOutlet weak var levelLabel: UILabel!
     
     override func awakeFromNib() {
