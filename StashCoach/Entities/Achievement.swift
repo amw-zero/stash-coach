@@ -11,9 +11,13 @@ import Foundation
 struct Achievement: Codable {
     let level: String
     let bgImageUrl: String
+    let progress: Float32
+    let total: Float32
     
     enum CodingKeys: String, CodingKey {
         case level
+        case progress
+        case total
         case bgImageUrl = "bg_image_url"
     }
 }

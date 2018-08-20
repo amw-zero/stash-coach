@@ -24,8 +24,14 @@ class AchievementsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     
+    @IBOutlet weak var progressView: UIProgressView! {
+        didSet {
+            progressView.layer.cornerRadius = 5.0
+        }
+    }
     func configure(with achievement: Achievement) {
-        levelLabel.text = achievement.level        
+        levelLabel.text = achievement.level
         backgroundImageView.kf.setImage(with: URL(string: achievement.bgImageUrl))
+        progressView.progress = achievement.progress / achievement.total
     }
 }
