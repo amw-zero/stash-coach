@@ -33,5 +33,6 @@ class AchievementsTableViewCell: UITableViewCell {
         levelLabel.text = achievement.level
         backgroundImageView.kf.setImage(with: URL(string: achievement.bgImageUrl))
         progressView.progress = achievement.progress / achievement.total
+        contentView.alpha = achievement.accessible ? 1.0 : 0.4
     }
 }

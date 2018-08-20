@@ -13,11 +13,13 @@ struct Achievement: Codable {
     let bgImageUrl: String
     let progress: Float32
     let total: Float32
+    let accessible: Bool
     
     enum CodingKeys: String, CodingKey {
         case level
+        case bgImageUrl = "bg_image_url"
         case progress
         case total
-        case bgImageUrl = "bg_image_url"
+        case accessible
     }
 }
