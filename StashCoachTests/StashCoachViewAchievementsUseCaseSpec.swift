@@ -12,7 +12,7 @@ import Nimble
 
 class StashCoachModuleTests: QuickSpec {
     override func spec() {
-        describe("StashCoachModule") {
+        describe("Viewing Achievements") {
             var cell: AchievementsTableViewCell!
 
             beforeEach {
