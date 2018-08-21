@@ -10,7 +10,7 @@
 import Quick
 import Nimble
 
-class StashCoachModuleTests: QuickSpec {
+class StashCoachViewAchievementsUseCaseSpec: QuickSpec {
     override func spec() {
         describe("Viewing Achievements") {
             var cell: AchievementsTableViewCell!
