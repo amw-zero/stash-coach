@@ -14,20 +14,11 @@ class StashCoachModuleTests: QuickSpec {
     override func spec() {
         describe("StashCoachModule") {
             var cell: AchievementsTableViewCell!
-            let presenter = StashCoachPresenter()
-            let interactor = StashCoachInteractor()
-            let view = UIStoryboard(
-                name: "StashCoachViewController",
-                bundle: Bundle.main
-            ).instantiateInitialViewController() as! StashCoachViewController
-            
+
             beforeEach {
+                let view = StashCoachRouter().assembleModule()
                 view.loadView()
-                interactor.output = presenter
-                presenter.view = view
-                presenter.interactor = interactor
-                view.presenter = presenter
-                presenter.showAchievements()
+                view.viewDidLoad()
                 
                 let indexPath = IndexPath(row: 0, section: 0)
                 cell = view.tableView(

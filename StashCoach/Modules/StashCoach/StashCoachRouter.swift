@@ -9,7 +9,7 @@
 import UIKit
 
 class StashCoachRouter {
-    func assembleModule() -> UIViewController {
+    func assembleModule() -> StashCoachViewController {
         let presenter = StashCoachPresenter()
         let interactor = StashCoachInteractor()
         let view = UIStoryboard(
