@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol StashCoachModule {
+    func showAchievements()
+}
+
 class StashCoachPresenter: StashCoachModule {
     weak var view: StashCoachView!
     var interactor: StashCoachInteractor!
