@@ -37,7 +37,8 @@ class StashCoachModuleTests: QuickSpec {
             }
             
             it("displays achievement information") {
-                expect(cell.levelLabel.text).to(equal("1"))                
+                expect(cell.levelLabel.text).to(equal("1"))
+                expect(cell.progressView.progress).to(equal(0.2))
             }
         }
     }
