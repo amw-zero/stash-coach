@@ -12,24 +12,39 @@ import Nimble
 
 class StashCoachViewAchievementsUseCaseSpec: QuickSpec {
     override func spec() {
-        describe("Viewing Achievements") {
-            var cell: AchievementsTableViewCell!
-
+        var cell: AchievementsTableViewCell!
+        
+        func setSubjectCell(fromRow row: Int) {
+            let indexPath = IndexPath(row: row, section: 0)
+            let view = StashCoachRouter().assembleModule()
+            view.loadView()
+            view.viewDidLoad()
+            
+            cell = view.tableView(
+                view.achievementsTableView,
+                cellForRowAt: indexPath
+            ) as! AchievementsTableViewCell
+        }
+        
+        describe("Viewing accessible Achievements") {
             beforeEach {
-                let view = StashCoachRouter().assembleModule()
-                view.loadView()
-                view.viewDidLoad()
-                
-                let indexPath = IndexPath(row: 0, section: 0)
-                cell = view.tableView(
-                    view.achievementsTableView,
-                    cellForRowAt: indexPath
-                ) as! AchievementsTableViewCell
+                setSubjectCell(fromRow: 0)
             }
             
             it("displays achievement information") {
                 expect(cell.levelLabel.text).to(equal("1"))
                 expect(cell.progressView.progress).to(equal(0.2))
+                expect(cell.contentView.alpha).to(equal(1.0))
+            }
+        }
+        
+        describe("Viewing inaccessible Achievements") {
+            beforeEach {
+                setSubjectCell(fromRow: 1)
+            }
+            
+            it("reduces the alpha of the achievement") {
+                expect(cell.contentView.alpha).to(beCloseTo(0.4, within: 0.01))
             }
         }
     }
