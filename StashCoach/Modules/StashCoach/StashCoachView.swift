@@ -15,8 +15,8 @@ protocol StashCoachView: class {
 
 class StashCoachViewController: UIViewController, StashCoachView {
     static let achievementsCellReuseIdentifier = "AchievementsTableViewCell"
-    var achievements: [Achievement] = []
     
+    var achievements: [Achievement] = []
     var presenter: StashCoachModule!
     
     override func viewDidLoad() {
@@ -30,7 +30,6 @@ class StashCoachViewController: UIViewController, StashCoachView {
                 nibName: "AchievementsTableViewCell",
                 bundle: nil
             )
-           
             achievementsTableView.register(
                 nib,
                 forCellReuseIdentifier: type(of: self).achievementsCellReuseIdentifier
@@ -55,8 +54,7 @@ extension StashCoachViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: StashCoachViewController.achievementsCellReuseIdentifier,
             for: indexPath
-            ) as! AchievementsTableViewCell
-        
+        ) as! AchievementsTableViewCell
         let achievement = achievements[indexPath.row]
         cell.configure(with: achievement)
         
