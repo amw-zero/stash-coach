@@ -15,7 +15,7 @@
 		A5DBC5D72123900800028108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5D62123900800028108 /* AppDelegate.swift */; };
 		A5DBC5DE2123900900028108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DD2123900900028108 /* Assets.xcassets */; };
 		A5DBC5E12123900900028108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC5DF2123900900028108 /* LaunchScreen.storyboard */; };
-		A5DBC6072124E2C900028108 /* StashCoachModuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC6062124E2C900028108 /* StashCoachModuleSpec.swift */; };
+		A5DBC6072124E2C900028108 /* StashCoachViewAchievementsUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC6062124E2C900028108 /* StashCoachViewAchievementsUseCaseSpec.swift */; };
 		A5DBC6092124E44900028108 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A5DBC6082124E44900028108 /* Podfile */; };
 		A5DBC60D2124ED6300028108 /* StashCoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC60C2124ED6300028108 /* StashCoachPresenter.swift */; };
 		A5DBC60F2125159C00028108 /* StashCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC60E2125159C00028108 /* StashCoachView.swift */; };
@@ -54,7 +54,7 @@
 		A5DBC5E22123900900028108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DBC5E72123900900028108 /* StashCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DBC5ED2123900900028108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5DBC6062124E2C900028108 /* StashCoachModuleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachModuleSpec.swift; sourceTree = "<group>"; };
+		A5DBC6062124E2C900028108 /* StashCoachViewAchievementsUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachViewAchievementsUseCaseSpec.swift; sourceTree = "<group>"; };
 		A5DBC6082124E44900028108 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5DBC60C2124ED6300028108 /* StashCoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachPresenter.swift; sourceTree = "<group>"; };
 		A5DBC60E2125159C00028108 /* StashCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachView.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DBC5ED2123900900028108 /* Info.plist */,
-				A5DBC6062124E2C900028108 /* StashCoachModuleSpec.swift */,
+				A5DBC6062124E2C900028108 /* StashCoachViewAchievementsUseCaseSpec.swift */,
 			);
 			path = StashCoachTests;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DBC6072124E2C900028108 /* StashCoachModuleSpec.swift in Sources */,
+				A5DBC6072124E2C900028108 /* StashCoachViewAchievementsUseCaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
